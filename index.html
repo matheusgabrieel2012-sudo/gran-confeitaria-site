@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fffaf0">
+  <meta name="description" content="Gran Confeitaria: bolos de aniversário, bolos caseiros e docinhos para festas, feitos sob encomenda em São Paulo.">
+  <title>Gran Confeitaria | Doces feitos para celebrar</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="announcement">
+    <span class="announcement-dot"></span>
+    Feito sob encomenda, com carinho em cada detalhe
+  </div>
+
+  <header class="site-header" id="topo">
+    <a class="brand" href="#topo" aria-label="Gran Confeitaria - início">
+      <span class="brand-mark">✳</span>
+      <span class="brand-copy">
+        <strong>GRAN</strong>
+        <small>CONFEITARIA</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+      <a href="#colecao">Nossas delícias</a>
+      <a href="#sobre">Nossa essência</a>
+      <a href="#encomenda">Encomendas</a>
+    </nav>
+
+    <a class="header-cta" href="https://wa.me/5511980601787?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Gran%20Confeitaria%20e%20quero%20fazer%20uma%20encomenda." target="_blank" rel="noopener noreferrer">
+      Fazer encomenda <span>↗</span>
+    </a>
+  </header>
+
+  <main>
+    <!-- APRESENTAÇÃO -->
+    <section class="hero section-wrap">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">
+          <span></span>
+          DOCES GOURMET · SÃO PAULO
+        </span>
+
+        <h1>
+          Momentos especiais merecem
+          <em>um doce</em> à altura.
+        </h1>
+
+        <p>
+          Bolos e docinhos preparados sob encomenda para transformar
+          suas comemorações em lembranças deliciosas.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#colecao">
+            Descobrir sabores <span>↓</span>
+          </a>
+
+          <a class="text-link" href="https://wa.me/5511980601787?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20as%20op%C3%A7%C3%B5es%20da%20Gran%20Confeitaria." target="_blank" rel="noopener noreferrer">
+            Falar com a confeitaria <span>↗</span>
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span class="note-icon">♡</span>
+          <span>
+            <strong>Feito para você</strong>
+            <small>Detalhes pensados com carinho</small>
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay">
+        <div class="hero-image-frame">
+          <img
+            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1100&q=85"
+            alt="Bolo decorado de confeitaria"
+            fetchpriority="high"
+          >
+        </div>
+
+        <div class="floating-sticker">
+          <span>feito com</span>
+          <strong>♡ carinho</strong>
+        </div>
+
+        <div class="hero-caption">
+          <span class="caption-line"></span>
+          <span>Pequenas doçuras, grandes memórias.</span>
+        </div>
+
+        <span class="decor decor-one">✳</span>
+        <span class="decor decor-two">✦</span>
+      </div>
+
+      <div class="hero-drip"></div>
+    </section>
+
+    <!-- DIFERENCIAIS -->
+    <section class="benefits">
+      <div class="benefit">
+        <span class="benefit-icon">✧</span>
+        <span>
+          <strong>Feito sob encomenda</strong>
+          <small>Preparado para sua ocasião</small>
+        </span>
+      </div>
+
+      <div class="benefit">
+        <span class="benefit-icon">♡</span>
+        <span>
+          <strong>Detalhes especiais</strong>
+          <small>Apresentação com cuidado</small>
+        </span>
+      </div>
+
+      <div class="benefit">
+        <span class="benefit-icon">✿</span>
+        <span>
+          <strong>Para celebrar</strong>
+          <small>Bolos e doces para festas</small>
+        </span>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section class="collection section-wrap" id="colecao">
+      <div class="section-heading reveal">
+        <span class="eyebrow">
+          <span></span>
+          NOSSO CATÁLOGO
+        </span>
+
+        <h2>
+          Um motivo a mais<br>
+          para <em>comemorar.</em>
+        </h2>
+
+        <p>
+          Escolha sua inspiração e fale com a gente para consultar
+          sabores, tamanhos, valores e disponibilidade.
+        </p>
+      </div>
+
+      <div class="filter-row reveal" role="group" aria-label="Filtrar produtos">
+        <button class="filter-button active" data-filter="todos" type="button">Todas as delícias</button>
+        <button class="filter-button" data-filter="bolos" type="button">Bolos</button>
+        <button class="filter-button" data-filter="caseiros" type="button">Bolos secos</button>
+        <button class="filter-button" data-filter="docinhos" type="button">Docinhos</button>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+
+        <article class="product-card reveal" data-category="bolos">
+          <a class="product-image" href="#encomenda" aria-label="Consultar bolo especial">
+            <img
+              src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
+              alt="Bolo decorado com cobertura"
+              loading="lazy"
+            >
+            <span class="product-tag">Para comemorar</span>
+          </a>
+
+          <div class="product-info">
+            <span class="product-type">BOLOS DE ANIVERSÁRIO</span>
+            <h3>Bolo especial</h3>
+            <p>
+              Uma opção para deixar sua comemoração ainda mais marcante.
+            </p>
+            <button class="product-order" data-product="Bolo especial" type="button">
+              Consultar encomenda <span>↗</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="product-card reveal reveal-delay-1" data-category="caseiros">
+          <a class="product-image" href="#encomenda" aria-label="Consultar bolo caseiro">
+            <img
+              src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=800&q=80"
+              alt="Bolo caseiro dourado"
+              loading="lazy"
+            >
+            <span class="product-tag">Sabor de casa</span>
+          </a>
+
+          <div class="product-info">
+            <span class="product-type">BOLOS SECOS</span>
+            <h3>Bolo caseiro</h3>
+            <p>
+              Simples, delicioso e perfeito para acompanhar bons momentos.
+            </p>
+            <button class="product-order" data-product="Bolo caseiro" type="button">
+              Consultar encomenda <span>↗</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="product-card reveal reveal-delay-2" data-category="docinhos">
+          <a class="product-image" href="#encomenda" aria-label="Consultar docinhos gourmet">
+            <img
+              src="https://images.unsplash.com/photo-1550617931-e17a7b70dce2?auto=format&fit=crop&w=800&q=80"
+              alt="Docinhos de chocolate"
+              loading="lazy"
+            >
+            <span class="product-tag">Para compartilhar</span>
+          </a>
+
+          <div class="product-info">
+            <span class="product-type">DOCINHOS PARA FESTAS</span>
+            <h3>Docinhos gourmet</h3>
+            <p>
+              Pequenos detalhes que deixam a mesa da festa ainda mais especial.
+            </p>
+            <button class="product-order" data-product="Docinhos gourmet para festa" type="button">
+              Consultar encomenda <span>↗</span>
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="catalog-note">
+        <span>✳</span>
+        Fotos ilustrativas temporárias. Sabores, decoração, tamanhos e valores são confirmados no atendimento.
+      </p>
+    </section>
+
+    <!-- SOBRE A CONFEITARIA -->
+    <section class="story" id="sobre">
+      <div class="story-image reveal">
+        <img
+          src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=1000&q=85"
+          alt="Bolo artesanal para uma ocasião especial"
+          loading="lazy"
+        >
+
+        <div class="story-seal">
+          <span>GRAN</span>
+          <strong>feito com<br>carinho</strong>
+          <span>CONFEITARIA</span>
+        </div>
+      </div>
+
+      <div class="story-copy reveal reveal-delay">
+        <span class="eyebrow">
+          <span></span>
+          NOSSA ESSÊNCIA
+        </span>
+
+        <h2>
+          O ingrediente especial é o <em>carinho.</em>
+        </h2>
+
+        <p>
+          Na Gran Confeitaria, cada encomenda é uma oportunidade
+          de fazer parte de um momento importante.
+        </p>
+
+        <p>
+          De um bolo de aniversário aos docinhos da festa,
+          queremos ajudar você a celebrar com sabor e beleza.
+          Conte para nós o que você imaginou e vamos conversar
+          sobre as possibilidades.
+        </p>
+
+        <a class="button button-outline" href="https://wa.me/5511980601787?text=Ol%C3%A1%21%20Quero%20conversar%20sobre%20uma%20encomenda%20personalizada." target="_blank" rel="noopener noreferrer">
+          Planejar minha encomenda <span>↗</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CHAMADA PARA ENCOMENDAS -->
+    <section class="order-section section-wrap" id="encomenda">
+      <div class="order-panel reveal">
+        <div class="order-sparkle">✳</div>
+
+        <span class="eyebrow">
+          <span></span>
+          SUA PRÓXIMA COMEMORAÇÃO
+        </span>
+
+        <h2>
+          Vamos adoçar<br>esse momento?
+        </h2>
+
+        <p>
+          Conte sua ideia para a gente. Consulte opções,
+          valores e disponibilidade diretamente pelo WhatsApp.
+        </p>
+
+        <a class="button button-light" href="https://wa.me/5511980601787?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Gran%20Confeitaria%20e%20gostaria%20de%20fazer%20uma%20encomenda." target="_blank" rel="noopener noreferrer">
+          Pedir pelo WhatsApp <span>↗</span>
+        </a>
+
+        <span class="order-footnote">
+          Atendimento para encomendas · São Paulo – SP
+        </span>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#topo">
+      <span class="brand-mark">✳</span>
+      <span class="brand-copy">
+        <strong>GRAN</strong>
+        <small>CONFEITARIA</small>
+      </span>
+    </a>
+
+    <p>Doces gourmet feitos para celebrar.</p>
+
+    <div class="footer-links">
+      <a href="https://wa.me/5511980601787" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+      <a href="https://www.instagram.com/" data-instagram-link target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+    </div>
+
+    <small class="copyright">
+      © <span id="year"></span> Gran Confeitaria. Feito com carinho.
+    </small>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO INSTAGRAM -->
+  <a
+    class="floating-instagram"
+    href="https://www.instagram.com/"
+    data-instagram-link
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Visitar Instagram da Gran Confeitaria"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+      <circle cx="12" cy="12" r="4"></circle>
+      <circle class="insta-dot" cx="17.5" cy="6.8" r="1"></circle>
+    </svg>
+  </a>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/5511980601787?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Gran%20Confeitaria."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar com a Gran Confeitaria pelo WhatsApp"
+  >
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+      <path d="M16.04 3C8.9 3 3.1 8.75 3.1 15.83c0 2.26.6 4.47 1.75 6.42L3 29l6.97-1.81a13.1 13.1 0 0 0 6.07 1.49h.01c7.14 0 12.95-5.75 12.95-12.83A12.77 12.77 0 0 0 16.04 3Zm0 23.52c-1.9 0-3.77-.5-5.4-1.46l-.39-.23-4.14 1.08 1.1-4.02-.25-.41a10.5 10.5 0 0 1-1.62-5.65c0-5.9 4.8-10.7 10.71-10.7 2.86 0 5.55 1.11 7.57 3.14a10.57 10.57 0 0 1 3.13 7.55c0 5.9-4.8 10.7-10.71 10.7Zm5.88-8.01c-.32-.16-1.9-.94-2.2-1.05-.3-.11-.51-.16-.73.16-.21.32-.83 1.05-1.02 1.27-.19.21-.38.24-.7.08-.32-.16-1.35-.5-2.57-1.6-.95-.84-1.6-1.88-1.79-2.2-.19-.32-.02-.49.14-.65.14-.14.32-.38.48-.57.16-.19.21-.32.32-.54.11-.21.05-.4-.03-.57-.08-.16-.73-1.75-1-2.4-.26-.63-.53-.54-.73-.55h-.62c-.21 0-.56.08-.86.4-.3.32-1.13 1.1-1.13 2.67 0 1.57 1.16 3.09 1.32 3.3.16.21 2.28 3.47 5.52 4.87.77.33 1.37.53 1.84.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.54.27-.76.27-1.41.19-1.54-.08-.13-.29-.21-.62-.37Z"/>
+    </svg>
+  </a>
+</body>
+</html>
